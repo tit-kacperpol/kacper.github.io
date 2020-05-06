@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>1 animacja</title>
+
+    <style>
+      #animka {
+        position:relative;
+        float:left;
+        font-size:2.8em;
+        font-family:"Courier New", monospace;
+        background-color:white;
+      }
+
+      #animka > span {
+        position:absolute;
+        top:0;
+        right:0;
+        height:100%;
+        background-color:lightblue;
+        border-left:1px solid transparent;
+        animation:pisz 5s steps(25,start) infinite, znak 1s step-end infinite;
+        -webkit-animation:pisz 5s steps(25,start) infinite, znak 1s step-end infinite; 
+      }
+
+      #animka > p:hover {
+        animation-play-state:paused;
+      }
+	  
+      
+    --------
+      @keyframes pisz
+      {
+        0% { width:100%; }
+        100% { width:0; }
+      }
+
+      @keyframes znak
+      {
+        0% { border-left-color:transparent; }
+        50% { border-left-color:darkblue; }
+        100% { border-left-color:transparent; }
+      }
+
+   
+      @-webkit-keyframes pisz
+      {
+        0% { width:100%; }
+        100% { width:0; }
+      }
+
+      @-webkit-keyframes znak
+      {
+        0% { border-left-color:transparent; }
+        50% { border-left-color:darkblue; }
+        100% { border-left-color:transparent; }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="animka">moja 1 animacja<span></span></div>
+
+  </body>
+</html>
