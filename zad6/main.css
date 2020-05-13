@@ -1,3 +1,12 @@
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  35%  {background-color: black;}
+  50%  {background-color: darkblue;}
+  100% {background-color: green;}
+}
+
+
 p {
     font: 48px Arial;
     text-align: center;
@@ -10,28 +19,37 @@ p {
 }
 .blue1 { width: 33%; 
 background-color: #66ccff;
-height: 250px; float: left; }
+height: 250px; float: left; 
+animation:example 1s infinite;}
 .blue2 { width: 33%; 
 background-color: #3399ff;
-height: 250px; float: left; }
+height: 250px; float: left; 
+animation:example 2s infinite;}
 .blue3 { width: 33%; 
 background-color: #0066cc;
-height: 250px; float: left; }
+height: 250px; float: left; 
+animation:example 3s infinite;}
 .orange1 { width: 33%; 
 background-color: #ffcc66;
-height: 250px; float: left;}
+height: 250px; float: left;
+animation:example 4s infinite;}
 .orange2 { width: 33%; 
 background-color: #ff9933;
-height: 250px; float: left;}
+height: 250px; float: left;
+animation:example 5s infinite;}
 .orange3 { width: 33%; 
 background-color: #ff6600;
-height: 250px; float: left;}
+height: 250px; float: left;
+animation:example 6s infinite;}
 .yellow1 { width: 33%; 
 background-color: #ffffcc;
-height: 250px; float: left;}
+height: 250px; float: left;
+animation:example 7s infinite;}
 .yellow2 { width: 33%; 
 background-color: #ffff99;
-height: 250px; float: left;}
+height: 250px; float: left;
+animation:example 8s infinite;}
 .yellow3 { width: 33%; 
 background-color: #ffff66;
-height: 250px; float: left;}
+height: 250px; float: left;
+animation:example 9s infinite;}
